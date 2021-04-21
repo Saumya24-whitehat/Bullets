@@ -21,9 +21,11 @@ function draw() {
     var deformation=(0.5*weight*speed*speed)/(thickness*thickness*thickness);
     if (deformation>10){
       car.shapeColor=color(255,0,0);
+      wall.shapeColor=color(255,0,0);
     }
     if(deformation<10){
       car.shapeColor=color(0,255,0);
+      wall.shapeColor=color(0,255,0);
     }
   }
 
